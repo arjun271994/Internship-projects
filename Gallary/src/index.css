@@ -1,0 +1,226 @@
+.flex {
+    display: flex; /*General flex as we have to use flex multiple times and we want to avoid redundent code*/
+}
+
+.centerButton {
+    text-align: center;
+  }  /* General property to center the fetch button*/
+
+  button {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+  }
+
+/* One image*/
+.onlyOneImage {
+    text-align: center;
+  }
+
+
+  
+  .onlyOneImage img {
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+
+/* Two image*/
+
+  .TwoImages img {
+    width: 50vw;
+    height: 100vh ;
+    /* object-fit: cover; */
+  }
+
+  
+
+
+/* Three images*/
+
+  .threeImages {
+    gap: 15%;
+  }
+
+  .threeImages >.smallImages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .largeImage img {
+    width: 40vw;
+    height: 80vh;
+    /* object-fit: cover; */
+    margin-top: 5%;
+  }
+  
+  .smallImages img {
+    width: 35vw;
+    height: 50vh;
+
+  }
+
+  /* Four images*/
+
+  .fourImagesContainer {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+
+  }
+
+  .fourImagesContainer > .firsttTwo {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fourImagesContainer .firsttTwo img {
+    width: 30vw;
+    height: 50vh;
+    /* object-fit: cover; */
+  }
+
+  .nextTwo {
+    gap: 10%;
+    justify-content: center;
+
+  }
+
+  
+  .fourImagesContainer .nextTwo img {
+    width: 30vw;
+    height: 50vh;
+    /* object-fit: cover; */
+
+  }
+
+  .FiveImagesContainer > img {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .FiveImagesContainer> div > .firsttTwo > img {
+    height: 25vw;
+    width: 25vw;
+  }
+
+  .FiveImagesContainer> div > .nextTwo > img {
+    height: 25vw;
+    width: 25vw;
+  }
+
+  @media screen and (max-width: 500px) {
+      
+      .onlyOneImage img {
+        width: 100vw;
+        height: 80vh;
+        /* overflow: hidden; */
+      }
+
+
+      .TwoImages img {
+        width: 45vw;
+        height: 50vh ;
+        margin-left: 10px;
+        margin-top: 30%;
+        /* object-fit: cover; */
+      }
+
+
+      .threeImages {
+        gap: 12%;
+      }
+    
+      .threeImages >.smallImages {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .largeImage img {
+        width: 40vw;
+        height: 50vh;
+        /* object-fit: cover; */
+        margin-top: 40%;
+      }
+      
+      .smallImages img {
+        width: 35vw;
+        height: 35vh;
+        margin-top: 30%;
+
+    
+      }
+
+
+/* Four images*/
+
+  .fourImagesContainer {
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    /* overflow: hidden; */
+
+  }
+
+  .fourImagesContainer > .firsttTwo {
+    width: 100vw;
+    height: 50vh;
+    gap: 10%;
+
+  }
+
+  .fourImagesContainer .firsttTwo img {
+    width: 40vw;
+    height: 40vh;
+    /* object-fit: cover; */
+  }
+/* 
+  .nextTwo {
+    gap: 10%;
+    justify-content: center;
+
+  } */
+
+  
+  .fourImagesContainer .nextTwo img {
+    width: 40vw;
+    height:  40vh;
+    /* object-fit: cover; */
+
+  }
+
+
+  .FiveImagesContainer > img {
+    width: 35vw;
+    height: 35vh;
+    margin-top: 45%;
+  }
+
+  .fourImagesDiv {
+    margin-left: 10%;
+  }
+
+  .FiveImagesContainer> div > .firsttTwo > img {
+    margin-top: 80%;
+    height: 25vw;
+    width: 25vw;
+  }
+
+  .FiveImagesContainer> div > .nextTwo > img {
+    height: 25vw;
+    width: 25vw;
+    margin-top: 50%;
+  }
+    
+    
+
+  }
